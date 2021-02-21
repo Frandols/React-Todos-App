@@ -10,6 +10,13 @@ const Form = ({ setStatus, inputText, setInputText, todos, setTodos }) => {
 
     const submitTodoHandler = () => {
 
+        if(inputText === ''){
+
+            alert('Type something to add a to-do!');
+            return false;
+
+        }
+
         setTodos([...todos,
             {
                 text: inputText,
