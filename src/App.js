@@ -97,7 +97,7 @@ const App = () => {
   return (
     <Router>
 
-      <Route exact path='/'>
+      <Route exact path='/React-Todos-App/'>
         <div className='app'>
           <Nav userName={userName} userPhoto={userPhoto}/>
             <div className='title'>
@@ -108,9 +108,9 @@ const App = () => {
         </div>
       </Route>
 
-      <Route path='/register'>
+      <Route path='/React-Todos-App/register'>
 
-      { name_storaged ? <Redirect to='/'/> : <Redirect to='/register'/> }
+      { name_storaged ? <Redirect to='/React-Todos-App/'/> : <Redirect to='/React-Todos-App/register'/> }
 
         <Register setUserName={setUserName} setUserPhoto={setUserPhoto} userName={userName} userPhoto={userPhoto}/>
       </Route>
