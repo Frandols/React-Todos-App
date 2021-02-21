@@ -15,12 +15,12 @@ const Menu = ({ menuStatus, menuStatusHandler, userName, userPhoto }) => {
                         {userPhoto ? <div className='profile-img'>
                             <img src={userPhoto}></img>
                         </div> : ''}
-                        {userName ? <h2>Hello, {userName}.</h2> : <button className='form-reg-button'><a href='/register'>Register</a></button>}
+                        {userName ? <h2>Hello, {userName}.</h2> : <button className='form-reg-button'><a href={process.env.PUBLIC_URL + '/register'}>Register</a></button>}
                     </div>
                 </header>
                 <div className='menu-body'>
                     <ul>
-                        <li><button><a href='/help'>Help</a></button></li>
+                        <li><button><a href={process.env.PUBLIC_URL + '/help'}>Help</a></button></li>
                     </ul>
                 </div>
             </div>

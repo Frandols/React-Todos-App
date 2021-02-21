@@ -25,7 +25,7 @@ const HelpCard = () => {
                 </p>
             </div>
             <button>
-                <a href='/'>
+                <a href={process.env.PUBLIC_URL + '/'}>
                     <i className="fas fa-arrow-left fa-2x"></i>
                 </a>
             </button>

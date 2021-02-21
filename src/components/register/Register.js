@@ -44,7 +44,7 @@ const Register = ({setUserName, setUserPhoto, userName, userPhoto}) => {
 
         }
 
-        window.open('/', '_self');
+        window.open(process.env.PUBLIC_URL + '/', '_self');
 
     }
     
